@@ -2,10 +2,11 @@
 # Message Sender
 import os
 from socket import *
-host = "" # set to IP address of target computer
+host = "192.168.43.101" # set to IP address of target computer
 port = 13213
 addr = (host, port)
 UDPSock = socket(AF_INET, SOCK_DGRAM)
+print(host)
 while True:
     data = input("Enter message to send or type 'exit': ")
     data=data.encode("utf-8")
